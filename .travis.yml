@@ -13,8 +13,13 @@ brances:
 #Sebelum melakukan atau eksekusi script
 #Install kebutuhan os. ext: mod-php dll.
 before_install:
+  - curl -LO
+  - chmod +x ./irgi
+  - sudo mv ./irgi/tugaspaw
+  - irgi
 
 #Pre Exekution
+#testing dll.
 before_script:
 
 #Main Execution
